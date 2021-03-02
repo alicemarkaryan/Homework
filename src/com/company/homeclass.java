@@ -21,20 +21,7 @@ class Cup {
     }
 }
 
-public class homeclass {
-    public static void main (String[] args){
 
-        Cup c1=new Cup(5.3,11.5,2,"round");
-        Cup c2=new Cup("square", 2.5);
-        Cup c3=new Cup("round", 1);
-        Cup c4 = c1;
-        c4.radius=5;
-        System.out.println(c1.radius);
-        System.out.println(c2.form+" "+c1.tail);
-        System.out.println(c3.form);
-        System.out.println(c3.tail+" "+c1.form);
-    }
-}
 
 class MercedesGLE{
     int year;
@@ -54,7 +41,7 @@ class MercedesGLE{
         this.price=price; this.color=color; this.beauty=beauty;
     }
 }
-     class homeclass2{
+     class homeclass{
     public static void main(String[] arg) {
         MercedesGLE coupe1 = new MercedesGLE(2020, 120000, 20000, 5.0, "Black", "Automatic",
                 "SUV / Truck");
@@ -65,6 +52,19 @@ class MercedesGLE{
         System.out.println(coupe2.color+" "+coupe2.price);
         System.out.println(coupe1.price+" "+coupe1.year);
         System.out.println(coupe2.beauty+" "+ coupe1.gearbox+", "+coupe1.engineVolume+", "+coupe1.bodyStyle);
+
+
+                Cup c1=new Cup(5.3,11.5,2,"round");
+                Cup c2=new Cup("square", 2.5);
+                Cup c3=new Cup("round", 1);
+                Cup c4 = c1;
+                c4.radius=5;
+                System.out.println(c1.radius);
+                System.out.println(c2.form+" "+c1.tail);
+                System.out.println(c3.form);
+                System.out.println(c3.tail+" "+c1.form);
+
+
 
     }
 }
