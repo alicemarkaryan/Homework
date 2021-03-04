@@ -2,8 +2,8 @@ package com.company;
 
 public class Circle {
     private double R;
-    public int x;
-    public  int y;
+    private int x;
+    private int y;
 
 
 
@@ -11,16 +11,24 @@ public class Circle {
         this.R=R; this.x=x; this.y=y;
     }
     public Circle(double R){
-        setR(R);
+        this.R=R;
     }
 
-    public void setR(double R){
-        if(R>0){
-            this.R=R;
-        }
-        else{
-            System.out.println("Circle doesn't exist");
-        }
+    public void setX(int x){
+       this.x=x;
+    }
+
+
+    public int getX(){
+        return x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+        public int getY(){
+            return y;
     }
 
     public double CircleP(){
@@ -36,22 +44,11 @@ public class Circle {
 
 
 
-    public double getR(){
-        return R;
-    }
-
-
-    public int getX(){
-        return x;
-    }
-    public int getY(){
-        return y;
-    }
 
 
     public static void main(String[] args) {
 
-            Circle c = new Circle(20.5, 2, 5);
+        Circle c = new Circle(20.5, 2, 5);
         System.out.println(c.R+" "+c.x+" "+c.y);
         System.out.println(c.CircleS());
         System.out.println(c.CircleP());
