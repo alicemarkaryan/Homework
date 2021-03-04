@@ -1,103 +1,81 @@
 package com.company;
 
 public class Tv {
-    private String color;
-    private int price;
-    private double length;
-    private double weight;
-    private String model;
+    String model;
+    String color;
+    int price;
+    double length;
+    double weight;
 
 
-    public Tv(String model, int price, double length, double weight, String color) {
-        setWeight(weight);
-        setPrice(price);
-        setLength(length);
-        setColor(color);
-        setModel(model);
-
-
-
+    public Tv(String model, String color, int price, double weight, double length){
+        setModel(model); setPrice(price);setColor(color); setWeight(weight); setLength(length);
     }
 
-    public Tv(String color, String model, int price) {
-        this.color = color;
-        this.model = model;
-        this.price = price;
+    public Tv(int price, double weight, double length){
+    setPrice(price); setWeight(weight); this.length=length;
     }
 
-    void print(){
-        System.out.println( model+" "+  price +" "+ length + " "+ weight+" "+  color);
+    public void print(){
+        System.out.println(model+ " "+color+ " "+price+ " "+weight+" "+length);
     }
 
-    public void setWeight(double weight) {
-        if (weight > 5 && weight < 10) {
-            this.weight = weight;
+
+    public void setModel(String model){
+        if(model.charAt(0)=='s' || model.charAt(0)=='l')
+        {
+            this.model=model;
         }
     }
 
-    public double getWeight() {
-        return weight;
+    public String getModel(){
+        return model;
     }
 
-    public void setPrice(int price) {
-        if (price > 0 && price < 10000) {
-            this.price = price;
-        }
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setLength(double length) {
-        if (length > 4 && length < 100) {
-            this.length = length;
-        }
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public void setColor(String color) {
-        if (color.charAt(0) == 'w' || color.charAt(0) == 'b') {
-            this.color = color;
-        } else {
+    public void setColor(String color){
+        if(color.charAt(0)=='w' || color.charAt(0)=='b'){
+            this.color=color;
+        }else{
             System.out.println("wrong color");
         }
     }
 
-    public String getColor() {
+    public String getColor(){
         return color;
     }
 
-    public void setModel(String model) {
-        if (model.charAt(0) == 's' || model.charAt(0) == 'l') {
-            this.model = model;
-        } else {
-            System.out.println("wrong model");
+    public void setPrice(int price){
+        if(price>0 && price<10000){
+            this.price=price;
+        }
+
+    }
+    public int getPrice(){
+        return price;
+    }
+
+    public void setLength(double length){
+        if(length>0 && length<10000){
+            this.length=length;
+        }
+    }
+    public double getLength(){
+        return length;
+    }
+    public void  setWeight(double weight){
+        if(weight>0 || weight<10){
+            this.weight=weight;
         }
     }
 
-    public String getModel() {
-        return model;
-    }
-
-
-
     public static void main(String[] args){
-
-     Tv t1=new Tv("sony",500,20,7,"black");
-     Tv t2= new Tv("white","sony",3000);
-     Tv t3=t1;
-     t3.price=1500;
-     t1.print();
-     t2.print();
-
-
+        Tv t1=new Tv("sony", "black", 1000, 7,10);
+        t1.print();
+        Tv t2=new Tv(5000,9,20);
+        Tv t3=t2;
+        t3.price=2800;
+        System.out.println("price "+t2.price+" "+ t2.weight );
+        t3.print();
     }
-
-
 }
-
 
