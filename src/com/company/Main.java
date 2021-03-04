@@ -146,28 +146,38 @@ public class Main {
     default:
         System.out.println("no season");
         */
+//
+//     Scanner x = new Scanner (System.in);
+//     System.out.println("grel tvery");
+//     int a = x.nextInt();
+//     int b = x.nextInt();
+//     Scanner y = new Scanner(System.in);
+//     System.out.println("nshany");
+//     char sign = y.next().charAt(0);
+//
+//
+//     switch(sign)
+//     {
+//         case '+':
+//             System.out.println(a + b);
+//             break;
+//         case '-':
+//             System.out.println(a-b);
+//             break;
+//         default:
+//             System.out.println("NOt");
 
-     Scanner x = new Scanner (System.in);
-     System.out.println("grel tvery");
-     int a = x.nextInt();
-     int b = x.nextInt();
-     Scanner y = new Scanner(System.in);
-     System.out.println("nshany");
-     char sign = y.next().charAt(0);
 
-
-     switch(sign)
-     {
-         case '+':
-             System.out.println(a + b);
-             break;
-         case '-':
-             System.out.println(a-b);
-             break;
-         default:
-             System.out.println("NOt");
+//              {
+//             double nums[] = {10.1, 11.2, 12.3, 13.4, 14.5};
+//             double result = 0;
+//             int i;
+//
+//             for(i=0; i<5; i++)
+//                 result = result + nums[i];
+//             System.out.println("Average is " + result / 5);
      }
 }
 
 
-    }
+

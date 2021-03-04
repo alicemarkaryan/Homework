@@ -4,11 +4,11 @@ public class Circle {
     private double R;
     public int x;
     public  int y;
-    private  double Pi;
+
 
 
     public Circle(double R, int x, int y){
-        setR(R); this.x=x; this.y=y;
+        this.R=R; this.x=x; this.y=y;
     }
     public Circle(double R){
         setR(R);
@@ -23,15 +23,15 @@ public class Circle {
         }
     }
 
-    public double CircleP(double R, double Pi){
-        setR(R);
-        return 2*R*Pi;
+    public double CircleP(){
+
+        return 2*R*3.14;
 
     }
 
-    public double CircleS(double R, double Pi){
-        setR(R);
-        return Pi*R*R;
+    public double CircleS(){
+
+        return 3.14*R*R;
     }
 
 
@@ -52,10 +52,8 @@ public class Circle {
     public static void main(String[] args) {
 
             Circle c = new Circle(20.5, 2, 5);
-        double res = c.CircleP(20.5, 3.14);
-        double res1= c.CircleS(20.5, 3.14);
-        System.out.println(res);
-        System.out.println(res1);
-
+        System.out.println(c.R+" "+c.x+" "+c.y);
+        System.out.println(c.CircleS());
+        System.out.println(c.CircleP());
     }
 }
