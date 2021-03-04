@@ -39,7 +39,7 @@ public class Circle {
 
     public double CircleS(){
 
-        return 3.14*R*R;
+        return 3.14 * R * R;
     }
 
 
