@@ -20,7 +20,7 @@ public class Circle {
 
 
     public int getX(){
-        return x;
+        return x ;
     }
 
     public void setY(int y) {
