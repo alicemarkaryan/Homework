@@ -50,7 +50,7 @@ public class Circle {
     public static void main(String[] args) {
 
         Circle c = new Circle(20.5, 2, 5);
-        System.out.println(c.R+"  "+c.x+" "+c.y);
+        System.out.println(c.R+" "+c.x+" "+c.y);
         c.CircleS();
         c.CircleP();
     }
