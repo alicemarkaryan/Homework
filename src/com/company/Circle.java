@@ -17,8 +17,6 @@ public class Circle {
     public void setX(int x){
        this.x=x;
     }
-
-
     public int getX(){
         return x ;
     }
@@ -31,26 +29,29 @@ public class Circle {
             return y;
     }
 
-    public double CircleP(){
-
-        return 2*R*3.14;
-
+    public void CircleP(){
+        if(R>0) {
+            System.out.println(2 * R * 3.14);
+        }else{
+            System.out.println(" Circle doesn't exist");
+        }
     }
 
-    public double CircleS(){
+    public void CircleS() {
+        if (R > 0) {
+            System.out.println(3.14 * R * R);
+        }
+        else
+        {
+            System.out.println("Circle doesn't exist");
 
-        return 3.14 * R * R;
+        }
     }
-
-
-
-
-
     public static void main(String[] args) {
 
         Circle c = new Circle(20.5, 2, 5);
         System.out.println(c.R+"  "+c.x+" "+c.y);
-        System.out.println(c.CircleS());
-        System.out.println(c.CircleP());
+        c.CircleS();
+        c.CircleP();
     }
 }
