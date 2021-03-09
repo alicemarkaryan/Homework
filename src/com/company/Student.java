@@ -1,22 +1,28 @@
 package com.company;
 
 public class Student {
-    public static int id=0 ;
+    public  int id ;
     private String colorSkin;
     private double height;
     private double weight;
     private int age;
+    static int num;
+
+
     Student(int age, String colorSkin, double weight, double height) {
         setAge(age);
         this.colorSkin = colorSkin;
         this.weight = weight;
         this.height = height;
 
-        System.out.println(getId()+" student id is "+id);
+
+        ++num;
+        id=num;
     }
 
+
     public int getId(){
-        return ++id;
+        return id;
     }
 
 
@@ -48,15 +54,15 @@ public class Student {
     public double getHeight() {
         return height;
     }
-    public static void main(String[] args) {
-        Student s1 = new Student(20, "white",  60, 170);
-        Student s2 = new Student(25, "black", 50, 160);
-        Student s3 = new Student(20, "white",  60, 170);
-        Student s4 = new Student(25, "black", 50, 160);
-        Student s5 = new Student(20, "white",  60, 170);
-        Student s6 = new Student(25, "black", 50, 160);
-        Student s7 = new Student(20, "white",  60, 170);
-        Student s8 = new Student(25, "black", 50, 160);
+
+        public static void main(String[] args){
+
+        Student s1=new Student(20,"white", 56.5,170.5);
+            System.out.println(s1.getId());
+            Student s2=new Student(20,"sevmundar", 58,185);
+            System.out.println(s2.getId());
+            System.out.println(s1.getId());
+
     }
 }
 
