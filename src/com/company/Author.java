@@ -1,14 +1,14 @@
 package com.company;
 
 public class Author {
-    private int bookCount;
+
     private String name;
     private int age;
     private Book [] books;
 
 
-    Author(int bookCount, String name, int age, Book [] books) {
-        setBookCount(bookCount);
+    Author( String name, int age, Book [] books) {
+
         this.name = name;
         this.age = age;
         this.books=books;
@@ -16,11 +16,6 @@ public class Author {
 
     }
 
-    public void setBookCount(int bookCount) {
-        if (bookCount > 0) {
-            this.bookCount = bookCount;
-        }
-    }
 
     public String getName() {
         return name;
@@ -46,9 +41,7 @@ public class Author {
 
                 this.books = books;
     }
-    public int getBookCount(){
-        return bookCount;
-    }
+
 
 
   public  Book getBook(String name) {

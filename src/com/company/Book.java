@@ -61,9 +61,9 @@ public class Book {
         Book b5=new Book("Silkworm","fantasy",520,"Rowling");
         Book b6=new Book("Lethal White","fantasy",820,"Rowling");
         Book b7=new Book("Medieval West","general", 951,"Nicholls David");
-        Author a1=new Author(55,"Brown Dan", 56, new Book[]{b1,b4});
-        Author a2=new Author(8,"Rowling",55, new Book[]{b2,b5,b6});
-        Author a3=new Author(77,"Nicholls David",78,new Book []{b3,b7});
+        Author a1=new Author("Brown Dan", 56, new Book[]{b1,b4});
+        Author a2=new Author("Rowling",55, new Book[]{b2,b5,b6});
+        Author a3=new Author("Nicholls David",78,new Book []{b3,b7});
 
 
 
