@@ -5,10 +5,7 @@ import jdk.swing.interop.SwingInterOpUtils;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Main {
 
-   public static void main(String[] args)
- {
    /*  int a = 5;
      float c = 4f;
      if( (a>7) && ( ++c < 8 ) ) {
@@ -176,8 +173,5 @@ public class Main {
 //             for(i=0; i<5; i++)
 //                 result = result + nums[i];
 //             System.out.println("Average is " + result / 5);
-     }
-}
-
-
-
+// This program uses inheritance to extend Box.
+// A complete implementation of BoxWeight.
