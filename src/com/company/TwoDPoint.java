@@ -34,29 +34,19 @@ public  String TwoPointDistance(TwoDPoint t) {
     TwoDPoint t1 = new TwoDPoint(this.x - t.x, this.y - t.y);
     double a = this.x-t.x; double b=this.y - t.y;
 
+        double k = Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+         return "distance is "+k ;
 
 
-        if (a < 0 ) {
-            a=a*(-1);
-
-        }
-       if( b < 0) {
-
-           b=b*(-1);
-       }
-         return "distance is x=" + a + " y=" + b;
+    }
 
 
-
-}
-
-
-public static void main(String[] args){
-        TwoDPoint t1=new TwoDPoint(0,5);
-        TwoDPoint t2=new TwoDPoint(2,5);
+    public static void main(String[] args){
+        TwoDPoint t1=new TwoDPoint(5,9);
+        TwoDPoint t2=new TwoDPoint(8,5);
     System.out.println( t1.TwoPointDistance(t2));
-        ThreeDPoint th1=new ThreeDPoint(40,2,15);
-        ThreeDPoint th2=new ThreeDPoint(70,0,9);
+        ThreeDPoint th1=new ThreeDPoint(5,9,15);
+        ThreeDPoint th2=new ThreeDPoint(8,5,5);
         th1.distanceThreeDPoint(th2);
 
 

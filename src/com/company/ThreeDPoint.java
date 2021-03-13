@@ -24,16 +24,10 @@ public class ThreeDPoint extends TwoDPoint {
 
     public void distanceThreeDPoint(ThreeDPoint p){
 
-     ThreeDPoint p1=new ThreeDPoint(this.getX(), this.getY(), this.z-p.z);
+     ThreeDPoint p1=new ThreeDPoint(this.getX()-p.getX(), this.getY()-p.getY(), this.z-p.z);
+     double c=Math.sqrt(Math.pow(this.getX()-p.getX(),2)+Math.pow(this.getY()-p.getY(),2)+Math.pow(this.z-p.z,2));
 
-     double c=this.z-p.z; double a=this.getX()-p.getX(); double b=this.getY()-p.getZ();
-
-
-        if(c<0){
-            c=c*(-1);
-        }
-
-        System.out.println(p1.TwoPointDistance(p)+" z="+c);
+     System.out.println(c);
 
     }
 
