@@ -31,10 +31,10 @@ public double getY(){
 
 public  String TwoPointDistance(TwoDPoint t) {
 
-    TwoDPoint t1 = new TwoDPoint(this.x - t.x, this.y - t.y);
     double a = this.x-t.x; double b=this.y - t.y;
 
         double k = Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+
          return "distance is "+k ;
 
 
