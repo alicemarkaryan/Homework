@@ -28,13 +28,13 @@ public double getY(){
         return y;
 }
 
-public  String TwoPointDistance(TwoDPoint t) {
+public  void TwoPointDistance(TwoDPoint t) {
 
     double a = this.x-t.x; double b=this.y - t.y;
 
         double k = Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
 
-         return "distance is "+k ;
+    System.out.println("distance is "+k);
 
 
     }
@@ -43,7 +43,7 @@ public  String TwoPointDistance(TwoDPoint t) {
     public static void main(String[] args){
         TwoDPoint t1=new TwoDPoint(5,9);
         TwoDPoint t2=new TwoDPoint(8,5);
-    System.out.println( t1.TwoPointDistance(t2));
+     t1.TwoPointDistance(t2);
         ThreeDPoint th1=new ThreeDPoint(5,9,15);
         ThreeDPoint th2=new ThreeDPoint(8,5,5);
         th1.distanceThreeDPoint(th2);
