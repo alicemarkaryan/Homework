@@ -12,11 +12,11 @@ abstract public class Liquid {
 
 
     public void boilTempr() {
-        System.out.println("Water boils at 100 C" + " " + "ml " + ml * ml);
+        System.out.println("Liquid boils at unknown C");
     }
 
     public void density() {
-        System.out.println("density for liquid is "+ml/1000);
+        System.out.println("density for liquid is unknown");
     }
 
 
