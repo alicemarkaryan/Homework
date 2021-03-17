@@ -1,6 +1,6 @@
 package com.company;
 
-public class Liquid {
+abstract public class Liquid {
     protected double ml;
     protected String color;
 
@@ -26,11 +26,10 @@ public static void main(String[] args) {
     a.boilTempr();
     Liquid b = new Tea(200, "Green", 30);
     b.boilTempr();
-    Liquid c = new Liquid(100, "blue");
-    c.boilTempr();
 
 
-    Liquid[] d = {new Liquid(200, "blue" ), new Coffee(300, "black",50),
+
+    Liquid[] d = { new Coffee(300, "black",50),
             new Tea(200, "Green", 50)};
 
     for (Liquid e : d) {

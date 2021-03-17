@@ -21,12 +21,11 @@ public class ThreeDPoint extends TwoDPoint {
      return z;
     }
 
-
-    public void distanceThreeDPoint(ThreeDPoint p){
+    public double distanceThreeDPoint(ThreeDPoint p){
 
      double c=Math.sqrt(Math.pow(this.getX()-p.getX(),2)+Math.pow(this.getY()-p.getY(),2)+Math.pow(this.z-p.z,2));
 
-     System.out.println(distance is  c);
+     return c;
 
     }
 
