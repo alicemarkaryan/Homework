@@ -1,6 +1,6 @@
 package com.company;
 
-public class ElectronicDoor implements RightLeftMoveAble,Comparable{
+public class ElectronicDoor implements RightLeftMoveAble{
     private String DoorsType;
     protected int length;
 

@@ -1,9 +1,9 @@
 package com.company;
 
-public interface RightLeftMoveAble  {
+public interface RightLeftMoveAble extends Comparable  {
     void rightMoveAble();
     void leftMoveAble();
-    String toString();
+
     public int length();
-    public int compareTo(Object o);
+
 }

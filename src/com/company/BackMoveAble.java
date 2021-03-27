@@ -1,8 +1,8 @@
 package com.company;
 
-public interface BackMoveAble {
+public interface BackMoveAble extends Comparable{
    void backMoveAble();
-   String toString();
+
    public int length();
-   public int compareTo(Object o);
+
 }

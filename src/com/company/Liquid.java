@@ -2,12 +2,11 @@ package com.company;
 
 abstract public class Liquid {
     protected double ml;
-    protected String color;
 
 
-    public Liquid(double ml, String color) {
+
+    public Liquid(double ml) {
         this.ml = ml;
-        this.color = color;
     }
 
 
@@ -15,22 +14,21 @@ abstract public class Liquid {
         System.out.println("Liquid boils at unknown C");
     }
 
-    public void density() {
-        System.out.println("density for liquid is unknown");
-    }
-
+  abstract  public void density() ;
 
 
 public static void main(String[] args) {
-    Liquid a = new Coffee(100, "black", 20);
+    Liquid a = new Coffee(100, "black", 20,200);
     a.boilTempr();
-    Liquid b = new Tea(200, "Green", 30);
+    Liquid b = new Tea(200, "Green", 30,200);
     b.boilTempr();
+//    Coffee c=new Coffee(200,"black", 80,120);
+//    c.density();
 
 
 
-    Liquid[] d = { new Coffee(300, "black",50),
-            new Tea(200, "Green", 50)};
+    Liquid[] d = { new Coffee(300, "black",50,150),
+            new Tea(200, "Green", 50,140)};
 
     for (Liquid e : d) {
           e.density();

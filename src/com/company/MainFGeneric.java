@@ -1,6 +1,6 @@
 package com.company;
 
-public class MainFGeneric {
+public class MainFGeneric{
 
 
     public static void main(String[] args) {
@@ -30,11 +30,13 @@ public class MainFGeneric {
 
     }
 
-    private static  <T extends Flyable1<T>>  T isIn(T[] x, T y) {
 
 
-        for (int i = 0; i < x.length; i++)
-            if (y.equals(x[i])) {
+    static  <T extends Flyable1<T>>  T isIn(T[] x, T y) {
+
+
+        for (T t : x)
+            if (y.equals(t)) {
 
                 return y;
             }
@@ -42,18 +44,18 @@ public class MainFGeneric {
     }
 
 
-    private static boolean isIn(Parrot1[] pp, Parrot1 p) {
-        return true;
-    }
-
-    private static boolean isIn(Duck1[] dd, Duck1 d) {
-        return true;
-    }
-
-
-    private static boolean isIn(Airplane1[] aa, Airplane1 a1) {
-        return true;
-    }
+//    private static boolean isIn(Parrot1[] pp, Parrot1 p) {
+//        return true;
+//    }
+//
+//    private static boolean isIn(Duck1[] dd, Duck1 d) {
+//        return true;
+//    }
+//
+//
+//    private static boolean isIn(Airplane1[] aa, Airplane1 a1) {
+//        return true;
+//    }
 
 
 

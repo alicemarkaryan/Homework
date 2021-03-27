@@ -11,6 +11,10 @@ public class Duck1 implements Flyable1{
         this.speed=speed;
     }
 
+
+
+
+
     public int getSpeed(){
         return speed;
     }

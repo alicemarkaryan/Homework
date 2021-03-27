@@ -1,6 +1,6 @@
 package com.company;
 
-public class Airplane1 implements Flyable1{
+public class Airplane1  implements Flyable1{
     private int speed;
 
     public void setSpeed(int speed){
@@ -17,6 +17,9 @@ public class Airplane1 implements Flyable1{
     public int speed(){
         return speed;
     }
+
+
+
 
 @Override
     public int compareTo(Object o){
